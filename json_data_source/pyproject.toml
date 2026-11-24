@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-data-source"
+version = "0.1.0"
+description = "Data source plugin for JSON"
+requires-python = ">=3.10"
+dependencies = ["graph-explorer-api"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Otkomentarisati kada klasa plugina bude napravljena:
+# [project.entry-points."graph_explorer.data_sources"]
+# json = "json_data_source.plugin:JsonDataSource"
